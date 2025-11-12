@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Assignment</title>
+<style>
+body {
+  font-family: Arial;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.form-box {
+  width: 45%;
+  background-color: #f3f3f3;
+  padding: 20px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  color: #444;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  padding: 5px;
+  vertical-align: middle;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 80px;
+  width: 100%;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  display: inline-block;
+}
+
+button {
+  padding: 5px 15px;
+  border: 1px solid #aaa;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+p {
+  font-size: 12px;
+  color: #555;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- LEFT FORM -->
+  <div class="form-box">
+    <h2>Main Form Title</h2>
+    <form>
+      <table>
+        <tr>
+          <td><label>Full Name</label></td>
+          <td><input type="text"></td>
+          <td><label>Email</label></td>
+          <td><input type="text"></td>
+        </tr>
+
+        <tr>
+          <td><label>Long Title</label></td>
+          <td colspan="3"><input type="text"></td>
+        </tr>
+
+        <tr>
+          <td><label>Year Started</label></td>
+          <td colspan="3">
+            <select>
+              <option>January</option>
+              <option>February</option>
+            </select>
+            <select style="width:60px;">
+              <option>25</option>
+            </select>
+            <select style="width:80px;">
+              <option>2008</option>
+            </select>
+            <div class="color-box"></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Other Details 1</label></td>
+          <td>
+            <select style="width:70px;"><option>25</option></select>
+          </td>
+          <td><label>Other Details 2</label></td>
+          <td>
+            <select style="width:70px;"><option>25</option></select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Other Details 3</label></td>
+          <td>
+            <select style="width:70px;"><option>25</option></select>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="4">
+            <p>Details and More Words Here, Details and More Words Here, Details and More Words Here.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="4">
+            <label>Your Comment Here</label><br>
+            <textarea></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="4" align="right">
+            <button>Send</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+
+  <!-- RIGHT FORM -->
+  <div class="form-box">
+    <h2>Main Another Form Title</h2>
+    <form>
+      <table>
+        <tr>
+          <td><label>Description</label></td>
+          <td colspan="3"><input type="text"></td>
+        </tr>
+
+        <tr>
+          <td><label>Products</label></td>
+          <td colspan="3">
+            <select>
+              <option>Product Item 1</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Item 1</label></td>
+          <td><input type="text"></td>
+          <td><label>Item 2</label></td>
+          <td><input type="text"></td>
+        </tr>
+
+        <tr>
+          <td><label>Item 3</label></td>
+          <td colspan="3"><input type="text"></td>
+        </tr>
+
+        <tr>
+          <td><label>Select Product</label></td>
+          <td colspan="3">
+            <select><option>Product 1</option></select>
+            <select style="width:60px;"><option>25</option></select>
+            <select><option>Product 2</option></select>
+            <select style="width:60px;"><option>25</option></select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Other Details 1</label></td>
+          <td><select style="width:60px;"><option>25</option></select></td>
+          <td><label>Other Details 2</label></td>
+          <td><select style="width:60px;"><option>25</option></select></td>
+        </tr>
+
+        <tr>
+          <td><label>Other Details 3</label></td>
+          <td><select style="width:60px;"><option>25</option></select></td>
+          <td><label>Other Details 4</label></td>
+          <td><select style="width:60px;"><option>25</option></select></td>
+        </tr>
+
+        <tr>
+          <td><label>Title</label></td>
+          <td><input type="text"></td>
+          <td><label>First Name</label></td>
+          <td><input type="text"></td>
+        </tr>
+
+        <tr>
+          <td><label>Last Name</label></td>
+          <td colspan="3"><input type="text"></td>
+        </tr>
+
+        <tr>
+          <td><label>Inline Label</label></td>
+          <td colspan="3"><input type="text"></td>
+        </tr>
+
+        <tr>
+          <td><label>Inline Label</label></td>
+          <td colspan="3"><input type="text"></td>
+        </tr>
+
+        <tr>
+          <td colspan="4" align="right">
+            <button>Send</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+</div>
+
+</body>
+</html>

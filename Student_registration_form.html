@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration Form</title>
+<style>
+    body {
+        background-color: white;
+        font-family: Arial, sans-serif;
+    }
+    .form-container {
+        background-color: #3b5bd6; /* blue form background */
+        color: white;
+        width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    table {
+        width: 100%;
+    }
+    td {
+        padding: 8px;
+        color: white;
+    }
+    input[type=text], input[type=email], select, textarea {
+        width: 95%;
+        padding: 6px;
+        border-radius: 4px;
+        border: none;
+    }
+    input[type=submit], input[type=reset] {
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        background-color: white;
+        color: #3b5bd6;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    input[type=submit]:hover, input[type=reset]:hover {
+        background-color: #d9d9ff;
+    }
+    h2 {
+        text-align: center;
+        color: white;
+    }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>STUDENT REGISTRATION FORM</h2>
+    <form>
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="firstname"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="lastname"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td>
+                    Day:
+                    <select>
+                        <option>1</option><option>2</option><option>3</option>
+                    </select>
+                    Month:
+                    <select>
+                        <option>Jan</option><option>Feb</option><option>Mar</option>
+                    </select>
+                    Year:
+                    <select>
+                        <option>2000</option><option>2001</option><option>2002</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Email ID</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Mobile Number</td>
+                <td><input type="text" name="mobile"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea rows="3" cols="40"></textarea></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><input type="text" name="city"></td>
+            </tr>
+            <tr>
+                <td>PIN Code</td>
+                <td><input type="text" name="pincode"></td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td><input type="text" name="state"></td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td><input type="text" name="country" value="India"></td>
+            </tr>
+            <tr>
+                <td>Hobbies</td>
+                <td>
+                    <input type="checkbox"> Drawing
+                    <input type="checkbox"> Singing
+                    <input type="checkbox"> Dancing
+                    <input type="checkbox"> Sketching
+                    <input type="checkbox"> Others
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><b>Qualification</b></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table border="1" width="100%" style="background-color:white; color:black;">
+                        <tr>
+                            <th>Sl. No</th>
+                            <th>Examination</th>
+                            <th>Board</th>
+                            <th>Percentage</th>
+                            <th>Year</th>
+                        </tr>
+                        <tr>
+                            <td>1</td><td>Class X</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td><td>Class XII</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td><td>Graduation</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td><td>Masters</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Courses Applied For</td>
+                <td>
+                    <input type="checkbox"> BCA
+                    <input type="checkbox"> B.Com
+                    <input type="checkbox"> B.Sc
+                    <input type="checkbox"> B.A
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>
